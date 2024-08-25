@@ -5,7 +5,7 @@
     "build": "webpack"
   },
   "author": "mininxd",
-  "license": "ISC",
+  "license": "MIT",
   "description": "Simple Toast with google icons included",
   "devDependencies": {
     "webpack": "^5.94.0",
