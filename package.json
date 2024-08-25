@@ -1,5 +1,5 @@
 {
-  "name": "toastJS",
+  "name": "xdtoast",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack"
