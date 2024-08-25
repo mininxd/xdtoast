@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 :root {
-  --color-dark: #f8f9fa;
   --color-light: #222222;
+  --color-dark: #f8f9fa;
   --color-success: #145122;
   --color-danger: #9c1a26;
   --color-info: #106d7c;
   --color-warning: #7e5e00;
   
   --bg-light: #fafafa;
-  --bg-dark: #1c1c1c;
+  --bg-dark: #2a2a2a;
   --bg-success: #c3e6cb;
   --bg-danger: #f5c6cb;
   --bg-info: #bee5eb;
@@ -27,6 +29,12 @@
   display: flex;
   padding: 10px;
   transform: translate(0, -150%);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgb(0,0,0,0,);
+}
+.toast-notification-icon {
+  font-size: inherit;
+  transform: translateY(3px);
 }
 .toast-notification .toast-notification-wrapper {
   flex: 1;
