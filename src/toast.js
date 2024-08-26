@@ -1,6 +1,6 @@
 import './toast.css';
 
-export default class Toasts {
+export default class xdtoast {
     constructor(options) {
         let defaults = {
             position: 'top-right',
