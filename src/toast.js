@@ -1,5 +1,4 @@
 import './toast.css';
-
 export default class xdtoast {
     constructor(options) {
         let defaults = {
@@ -19,7 +18,6 @@ export default class xdtoast {
 
     push(obj) {
     this.numToasts++;
-    
     // Create the toast element
     let toast = document.createElement(obj.link ? 'a' : 'div');
     if (obj.link) {
@@ -85,7 +83,7 @@ if (dismiss) {
     this.openToast(this.stack[index - 1]);
     
     // Optional callback on open
-    if (obj.onOpen) obj.onOpen(this.stack[index - 1]);
+    if (obj.onCreate) obj.onCreate(this.stack[index - 1]);
 }
 
 // Helper method to set toast position
