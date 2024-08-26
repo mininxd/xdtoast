@@ -1,6 +1,6 @@
 {
   "name": "xdtoast",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "build": "webpack"
   },
@@ -15,5 +15,12 @@
   },
   "dependencies": {
     "path": "^0.12.7"
-  }
+  },
+  "keywords": [
+    "toast",
+    "web-toast",
+    "xdtoast",
+    "framework",
+    "web-framework"
+  ]
 }

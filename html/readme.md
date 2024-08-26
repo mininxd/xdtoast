@@ -1,6 +1,5 @@
-A lightweight, gzipped web framework focused on performance. 
-
-![1000282468](https://github.com/user-attachments/assets/cffcb0c0-66a5-47ed-90ca-9faff6804fbb)
+### xdtoast:
+A lightweight, gzipped web framework focused on fast performance.
 
 
 ### Install :
@@ -17,7 +16,7 @@ CDN jsdelivr
 
 CDN UNPKG
 ```bash
-<script src="https://unpkg.com/xdtoast@latest/dist/toast.js" type="module"></script>
+<script src="https://unpkg.com/xdtoast@1.0.0/dist/toast.js" type="module"></script>
 ```
 
 ### how to use : 
@@ -79,5 +78,3 @@ htmlBtn.addEventListener('click', function() {
 })
 ```
 
-
-[![Badge Text](https://img.shields.io/badge/donate_Saweria-E97627?style=for-the-badge)](https://saweria.co/mininxd)
