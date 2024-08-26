@@ -79,3 +79,5 @@ htmlBtn.addEventListener('click', function() {
 })
 ```
 
+
+[![Badge Text](https://img.shields.io/badge/donate_Saweria-E97627?style=for-the-badge)](https://saweria.co/mininxd)
