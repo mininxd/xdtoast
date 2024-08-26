@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import xdtoast from './toast.js';
-=======
-import xdtoast from '../dist/toast.js';
->>>>>>> 2acd4ef699bbc62c8f33ad147d10da5a33ded932
 export function randomize(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }

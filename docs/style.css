@@ -31,20 +31,23 @@ h1 {
 .tryPos {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 0px;
-    justify-content: center; /* Centers the grid items horizontally */
+    gap: 10px;
+    justify-content: center;
+    padding: 1em;
 }
 
-/* Basic styling for the grid items */
 .tryPos > .button {
     text-align: center !important;
     margin: 5px;
 }
+.tryPos > a {
+  margin: 10px !important;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 
 i {
   opacity: 0.6;
-}
-
-md-block {
-  overflow-x: scroll;
 }
