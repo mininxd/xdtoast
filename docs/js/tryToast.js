@@ -59,7 +59,7 @@ let style = [
 
 
 dload.addEventListener('click', function() {
-  window.location.assign("https://downgit.github.io/#/home?url=https://github.com/mininxd/xdtoast/blob/main/dist/xdtoast.js")
+  window.location.assign("https://github.com/mininxd/xdtoast/releases/download/1.2.0/xdtoast.js")
 })
 
 docs.addEventListener('click', function() {
