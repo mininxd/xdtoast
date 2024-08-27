@@ -1,5 +1,6 @@
 @import url("./css/skeleton.css");
 @import url("./css/component.css");
+@import url("./css/prism.css");
 * {
   -webkit-tap-highlight-color: transparent;
 }

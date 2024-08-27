@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html data-theme="dark">
   <head>
-<!--       <script src="./script.js" type="module"></script> -->
+      <script src="./prism.js" type="module"></script> 
   <script type="module">
   
   </script>
@@ -22,55 +22,50 @@
 
 After successfully downloading xdtoast, the next step is to import it into your HTML file
 
-  <div class="code">
-    <pre>
-  <code id="offlineCode">
+  <div>
+    <pre class="language-html">
 &lt;script type="module"&gt;
   import xdtoast from './xdtoast.js'
-&lt;script&gt;
-  </code>
+&lt;/script&gt;
+  
   </pre>
 </div>
 
 
     Import with CDN :
-    <br>
-    <div class="code">
-      <pre>
+    <br><br><br>
+    <div>
 <b>JSDelivr:</b>
-  <code id="jsdelivr">
+      <pre id="jsdelivr" class="language-html">
 &lt;script type="module"&gt;
   import xdtoast from 'https://cdn.jsdelivr.net/npm/xdtoast/dist/xdtoast.js'
-&lt;script&gt;
-  </code>
-  </pre>
+&lt;/script&gt;
+  
+</pre>
       
-<pre>
 <b>UNPKG :</b>
-<code id="unpkg">
+<pre id="unpkg" class="language-html">
 &lt;script type="module"&gt;
   import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/xdtoast.js'
-&lt;script&gt;
-</code>
+&lt;/script&gt;
+
 </pre>
   </div>
-  <br>
-  <div class="code">
-  <pre>
-<b>or if you use NPM :</b>
-   <code id="npm">
+  <br><br>
+  <div>
+<b> if you use NPM :</b>
+  <pre class="language-html" id="npm">
 &lt;script type="module"&gt;
   import xdtoast from 'node_modules/xdtoast/dist/xdtoast.js'
-&lt;script&gt; 
-      </code>
+&lt;/script&gt; 
+      
   </pre>
   </div>
 <span class="info">// click the code to copy</span>
 <hr>
 
 <h2>Initialization :</h2>
-<pre class="code">
-  <code>
+<pre class="language-js">
 // Initialize the xdtoast, try using unpkg
   import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/xdtoast.js';
   let toast = new xdtoast({
@@ -85,7 +80,6 @@ After successfully downloading xdtoast, the next step is to import it into your 
   content:'This is toast contemt',
   style:'success'
  });
-  </code>
 </pre>
 
 
@@ -160,9 +154,8 @@ After successfully downloading xdtoast, the next step is to import it into your 
   </td>
 </table>
 
-<pre class="code">
   Example Code :
-  <code>
+<pre class="language-js">
 let toast = new xdtoast({
   position: 'top-right',
   offsetX: 20,
@@ -174,7 +167,6 @@ let toast = new xdtoast({
   timing: 'ease-out',
   dim: false
 })
-  </code>
 </pre>
     
     
@@ -226,9 +218,9 @@ let toast = new xdtoast({
   an script when the toast is closed
   </td>
 </table>
-<pre class="code">
+<pre class="language-js">
  Example Code :
-  <code>
+  
 toast.push({
  icon: 'content_copy',
  title: 'copied successfuly',
@@ -241,7 +233,7 @@ toast.push({
    alert('you closed the toast');
  }
 })
-  </code>
+  
 </pre>
 </div>
 

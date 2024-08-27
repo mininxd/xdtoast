@@ -34,9 +34,6 @@ span.info {
   font-style: oblique;
 }
 pre {
-  max-width:95vw;
-  white-space: pre-wrap;
-  overflow: auto;
   font-family: Monospace !important;
 }
 
