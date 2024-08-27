@@ -1,10 +1,13 @@
-const path = require('path'); // Import the 'path' module
+const path = require('path');
 
 module.exports = {
-  entry: path.resolve('src/toast.js'),  // Ensure the entry path is absolute
+  entry: {
+    xdtoast: path.resolve(__dirname, 'src/toast.js'),
+    toast: path.resolve(__dirname, 'src/toast.js'),
+  },
   output: {
-    filename: 'xdtoast.js',
-    path: path.resolve('dist'),  // Convert the output path to an absolute path
+    filename: '[name].js',
+    path: path.resolve('dist'),
     libraryTarget: 'module'
   },
   mode: 'production',
