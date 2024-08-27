@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+  <head>
+<!--       <script src="./script.js" type="module"></script> -->
+  <script type="module">
+  
+  </script>
+<meta name="theme-color" content="#222">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>xdtoast - Docs</title>
+</head>
+<body>
+  <h1>Docs :</h1>
+
+<div class="container">
+  <h3>Getting Started</h3>
+  <p>
+    This xdtoast is ESM or module JS, you need <strong>type="module"</strong> when use &lt;script src=""&gt; or import the JS, but dont worry if you use CJS and its worked on web javascript to mix it with ESM
+  </p>
+  <hr>
+<h3>Install :</h3>
+
+After successfully downloading xdtoast, the next step is to import it into your HTML file
+
+  <div class="code">
+    <pre>
+  <code id="offlineCode">
+&lt;script type="module"&gt;
+  import xdtoast from './xdtoast.js'
+&lt;script&gt;
+  </code>
+  </pre>
+</div>
+
+
+    Import with CDN :
+    <br>
+    <div class="code">
+      <pre>
+<b>JSDelivr:</b>
+  <code id="jsdelivr">
+&lt;script type="module"&gt;
+  import xdtoast from 'https://cdn.jsdelivr.net/npm/xdtoast/dist/xdtoast.js'
+&lt;script&gt;
+  </code>
+  </pre>
+      
+<pre>
+<b>UNPKG :</b>
+<code id="unpkg">
+&lt;script type="module"&gt;
+  import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/xdtoast.js'
+&lt;script&gt;
+</code>
+</pre>
+  </div>
+  <br>
+  <div class="code">
+  <pre>
+<b>or if you use NPM :</b>
+   <code id="npm">
+&lt;script type="module"&gt;
+  import xdtoast from 'node_modules/xdtoast/dist/xdtoast.js'
+&lt;script&gt; 
+      </code>
+  </pre>
+  </div>
+<span class="info">// click the code to copy</span>
+<hr>
+
+<h2>Initialization :</h2>
+<pre class="code">
+  <code>
+// Initialize the xdtoast, try using unpkg
+  import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/xdtoast.js';
+  let toast = new xdtoast({
+  width:'fit-content',
+  time: 2
+  });
+  
+// show toast
+ toast.push({
+  icon:'', 
+  title:'toast header',
+  content:'This is toast contemt',
+  style:'success'
+ });
+  </code>
+</pre>
+
+
+<hr>
+<h3>Options :</h3>
+   <b>xdtoast({}) options</b>
+<table class="table">
+  <td class="item">
+  </td>
+  <tr></tr>
+  <td class="item">
+    position
+  </td>
+  <td class="item">
+    top-left, top-right, bottom-left, bottom-right
+  </td>
+  <tr></tr>
+  <td class="item">
+    offsetX
+  </td>
+  <td class="item">
+  Horizontal offset from the edge of the screen
+  </td>
+  <tr></tr>
+  <td class="item">
+    offsetY
+  </td>
+  <td class="item">
+  Verticaly offset from the edge of the screen
+  </td>
+  <tr></tr>
+  <td class="item">
+    width
+  </td>
+  <td class="item">
+  Width of the toast
+  </td>
+  <tr></tr>
+  <td class="item">
+  gap
+  </td>
+  <td class="item">
+  Space between multiple toasts
+  </td>
+  <tr></tr>
+  <td class="item">
+  duration
+  </td>
+  <td class="item">
+  Duration of the animation when the toast appears 
+  </td>
+  <tr></tr>
+  <td class="item">
+  timing
+  </td>
+  <td class="item">
+  CSS timing function for the animation (e.g., ease, ease-in, ease-out, linear)
+  </td>
+  <tr></tr>
+  <td class="item">
+  time
+  </td>
+  <td class="item">
+  Time (in seconds) before the toast automatically dismisses
+  </td>
+  <tr></tr>
+  <td class="item">
+  dim
+  </td>
+  <td class="item">
+  Whether or not to dim the background to old toast (true/false)
+  </td>
+</table>
+
+<pre class="code">
+  Example Code :
+  <code>
+let toast = new xdtoast({
+  position: 'top-right',
+  offsetX: 20,
+  offsetY: 20,
+  width: 200,
+  gap: 5,
+  duration: 0.25,
+  time: 5,
+  timing: 'ease-out',
+  dim: false
+})
+  </code>
+</pre>
+    
+    
+
+<b>push() options</b>
+<table class="table">
+  <td class="item">
+  </td>
+  <tr></tr>
+  <td class="item">
+    icon
+  </td>
+  <td class="item">
+    Google Icons.<br> See: https://fonts.google.com/icons
+  </td>
+  <tr></tr>
+  <td class="item">
+    title
+  </td>
+  <td class="item">
+  The header text for the toasts
+  </td>
+  <tr></tr>
+  <td class="item">
+    content
+  </td>
+  <td class="item">
+  The main content of the toast
+  </td>
+  <tr></tr>
+  <td class="item">
+    style
+  </td>
+  <td class="item">
+  light, dark, success, warning, danger, info
+  </td>
+  <tr></tr>
+  <td class="item">
+  onCreate
+  </td>
+  <td class="item">
+  an script when the toast is created
+  </td>
+  <tr></tr>
+  <td class="item">
+  onClose
+  </td>
+  <td class="item">
+  an script when the toast is closed
+  </td>
+</table>
+<pre class="code">
+ Example Code :
+  <code>
+toast.push({
+ icon: 'content_copy',
+ title: 'copied successfuly',
+ content: 'close this toast to continue',
+ style:'success',
+ onCreate: toast => {
+   alert('you created toast');
+ }
+ onClose: toast => {
+   alert('you closed the toast');
+ }
+})
+  </code>
+</pre>
+</div>
+
+
+<footer>
+    xdtoast &copy;2024 - presents.
+</footer>
+<script type="module">
+import xdtoast from './js/toast.js';
+let toast = new xdtoast({
+  width:'fit-content',
+  time: 2,
+});
+
+function copy(content) {
+  toast.push({
+    icon:'content_copy',
+    title:'-',
+    content:'URL coppied successfuly',
+    style:'success',
+  });
+  navigator.clipboard.writeText(content)
+}
+
+
+  npm.addEventListener('click', function() {
+  copy(`<script src="node_modules/xdtoast/dist/toast.js" type="module">`)
+})
+  unpkg.addEventListener('click', function() {
+  copy(`<script src="https://unpkg.com/xdtoast@latest/dist/toast.js" type="module">`)
+})
+  jsdelivr.addEventListener('click', function() {
+  copy(`<script src="https://cdn.jsdelivr.net/npm/xdtoast/dist/toast.js" type="module">`)
+})
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-A lightweight, gzipped web framework focused on performance. 
+### A simple toast xD
 
 ![1000282468](https://github.com/user-attachments/assets/cffcb0c0-66a5-47ed-90ca-9faff6804fbb)
 
@@ -11,19 +11,23 @@ npm install xdtoast
 ```
 
 CDN jsdelivr
-```bash
-<script src="https://cdn.jsdelivr.net/npm/xdtoast/dist/toast.js" type="module"></script>
+```html
+<script type="module">
+  import xdtoast from 'https://cdn.jsdelivr.net/npm/xdtoast/dist/xdtoast.js'
+<script>
 ```
 
 CDN UNPKG
-```bash
-<script src="https://unpkg.com/xdtoast@latest/dist/toast.js" type="module"></script>
+```html
+<script type="module">
+  import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/xdtoast.js'
+<script>
 ```
 
 ### how to use : 
 ```javascript
 // Initialize a new instance
-import xdtoast from 'dist/toast.js';
+import xdtoast from 'dist/xdtoast.js';
 const toast = new xdtoast()
 
 // How to show the toast :
@@ -69,6 +73,15 @@ toast.push({
 import xdtoast from 'dist/toast.js';
 const toast = new xdtoast()
 
+// Directly show 
+toast.push({
+    icon: 'check_circle',
+    title: 'Toast',
+    content: 'this is light toast!',
+    style: 'light'
+  })
+
+// with HTML element
 htmlBtn.addEventListener('click', function() {
   toast.push({
     icon: 'check_circle',

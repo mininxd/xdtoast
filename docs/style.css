@@ -1,5 +1,8 @@
 @import url("./css/skeleton.css");
-
+@import url("./css/component.css");
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 h1 {
   padding: 0.5em;
 }
@@ -9,45 +12,9 @@ h1 {
 }
 .button {
   width: auto !important;
-  -webkit-tap-highlight-color: transparent;
   transition: 0.05s linear;
 }
 .button:hover, .button:focus{
   background: #222;
   color: #fff;
-}
-.container {
-  margin: 1em;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.container > .button {
-  margin: 5px;
-  width: inherit;
-}
-
-/* Basic styling for the grid container */
-.tryPos {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    justify-content: center;
-    padding: 1em;
-}
-
-.tryPos > .button {
-    text-align: center !important;
-    margin: 5px;
-}
-.tryPos > a {
-  margin: 10px !important;
-}
-
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-i {
-  opacity: 0.6;
 }

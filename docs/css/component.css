@@ -1,0 +1,56 @@
+
+.home-container {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.home-container > .button {
+  margin: 5px;
+  width: inherit;
+}
+.home-container > a {
+  margin: 3px;
+}
+
+.container {
+  padding: 5px;
+}
+div.code {
+  overflow: scroll;
+  padding: none;
+  margin: none;
+  max-width: 96vh !important;
+  height: fit-content;
+}
+div.code > code {
+  padding: 5px;
+  font-family: Monospace !important;
+}
+span.info {
+  text-align: left;
+  opacity: 0.5;
+  font-style: oblique;
+}
+pre {
+  max-width:95vw;
+  white-space: pre-wrap;
+  overflow: auto;
+  font-family: Monospace !important;
+}
+
+
+.table {
+   width: 98vw;
+}
+.item {
+  gap: 5px;
+}
+
+footer {
+  font-family: Monospace;
+  margin: 1em 0 1em 0;
+  width: 100%;
+  text-align: center;
+}

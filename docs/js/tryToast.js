@@ -1,19 +1,9 @@
-import xdtoast from './toast.js';
+import xdtoast from './xdtoast.js';
+// import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/toast.js';
 export function randomize(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-const toast = new xdtoast({
-  position: 'top-right',
-  offsetX: 20,
-  offsetY: 20,
-  width: 200,
-  gap: 10,
-  duration: '.25s',
-  time: 5,
-  timing: 'ease-out',
-  dim: true,
-});
 
 function positionToast(pos) {
 const postToast = new xdtoast({
@@ -68,15 +58,13 @@ let style = [
 
 
 
-
-tryBtn.addEventListener('click', function() {
-  toast.push({
-    icon: randomize(icons),
-    title: randomize(header),
-    content: randomize(content),
-    style: randomize(style),
-  })
+dload.addEventListener('click', function() {
+  window.location.assign("https://downgit.github.io/#/home?url=https://github.com/mininxd/xdtoast/blob/main/dist/xdtoast.js")
 })
+
+docs.addEventListener('click', function() {
+  window.location.assign('docs.html')
+  })
 
 
 
