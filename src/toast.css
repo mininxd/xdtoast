@@ -74,16 +74,9 @@ background: var(--bg-light);
 .toast-notification .toast-notification-close:hover {
   color: rgba(0, 0, 0, 0.4);
 }
-.toast-notification.toast-notification-top-center {
-  transform: translate(calc(50vw - 50%), -150%);
-}
 .toast-notification.toast-notification-bottom-left, .toast-notification.toast-notification-bottom-right {
   transform: translate(0, 150%);
 }
-.toast-notification.toast-notification-bottom-center {
-  transform: translate(calc(50vw - 50%), 150%);
-}
-
 
 
 
