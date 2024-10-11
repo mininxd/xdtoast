@@ -23,14 +23,14 @@
   text-decoration: none;
   z-index: 999999;
   max-width: 300px;
-  background-color: #fff;
+  background-color: #fff !important;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
   border-radius: 4px;
   display: flex;
   padding: 10px;
   transform: translate(0, -150%);
-  -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: rgb(0,0,0,0,);
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-tap-highlight-color: rgb(0,0,0,0,) !important;
 }
 .toast-notification-icon {
   font-size: inherit;
@@ -47,17 +47,17 @@
   font-weight: 500;
   font-size: 18px;
   word-break: break-all;
-  color: var(--color-light);
+  color: var(--color-light) !important;
 }
 .toast-notification.toast-notification-light {
-background: var(--bg-light);
+background: var(--bg-light) !important;
 }
 .toast-notification .toast-notification-wrapper .toast-notification-content {
   font-size: 14px;
   margin: 0;
   padding: 0;
   word-break: break-all;
-  color: var(--color-light);
+  color: var(--color-light) !important;
 }
 .toast-notification .toast-notification-close {
   appearance: none;
@@ -69,10 +69,10 @@ background: var(--bg-light);
   width: calc(fit-content + 5px);
   height:fit-content;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 .toast-notification .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4) !important;
 }
 .toast-notification.toast-notification-bottom-left, .toast-notification.toast-notification-bottom-right {
   transform: translate(0, 150%);
@@ -83,19 +83,19 @@ background: var(--bg-light);
 
 
 .toast-notification.toast-notification-dark {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-dark) !important;
 }
 .toast-notification.toast-notification-dark .toast-notification-wrapper .toast-notification-header {
-  color: var(--color-dark);
+  color: var(--color-dark) !important;
 }
 .toast-notification.toast-notification-dark .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-dark);
+  color: var(--color-dark) !important;
 }
 .toast-notification.toast-notification-dark .toast-notification-close {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2) !important;
 }
 .toast-notification.toast-notification-dark .toast-notification-close:hover {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4) !important;
 }
 
 
@@ -103,74 +103,74 @@ background: var(--bg-light);
 
 
 .toast-notification.toast-notification-success {
-  background-color: var(--bg-success);
+  background-color: var(--bg-success) !important;
 }
 .toast-notification.toast-notification-success .toast-notification-wrapper .toast-notification-header {
-  color: var(--color-success);
+  color: var(--color-success) !important;
 }
 .toast-notification.toast-notification-success .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-success);
+  color: var(--color-success) !important;
 }
 .toast-notification.toast-notification-success .toast-notification-close {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 .toast-notification.toast-notification-success .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4) !important;
 }
 
 
 
 .toast-notification.toast-notification-warning {
-  background-color: var(--bg-warning);
+  background-color: var(--bg-warning) !important;
 }
 .toast-notification.toast-notification-warning .toast-notification-wrapper .toast-notification-header {
-  color: var(--color-warning);
+  color: var(--color-warning) !important;
 }
 .toast-notification.toast-notification-warning .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-warning);
+  color: var(--color-warning) !important;
 }
 .toast-notification.toast-notification-warning .toast-notification-close {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 .toast-notification.toast-notification-warning .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4) !important;
 }
 
 
 
 .toast-notification.toast-notification-danger {
-  background-color: var(--bg-danger);
+  background-color: var(--bg-danger) !important;
 }
 .toast-notification.toast-notification-danger .toast-notification-wrapper .toast-notification-header {
-  color: var(--color-danger);
+  color: var(--color-danger) !important;
 }
 .toast-notification.toast-notification-danger .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-danger);
+  color: var(--color-danger) !important;
 }
 .toast-notification.toast-notification-danger .toast-notification-close {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 .toast-notification.toast-notification-danger .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4) !important;
 }
 
 
 
 
 .toast-notification.toast-notification-info {
-  background-color: var(--bg-info);
+  background-color: var(--bg-info) !important;
 }
 .toast-notification.toast-notification-info .toast-notification-wrapper .toast-notification-header {
-  color: var(--color-info);
+  color: var(--color-info) !important;
 }
 .toast-notification.toast-notification-info .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-info);
+  color: var(--color-info) !important;
 }
 .toast-notification.toast-notification-info .toast-notification-close {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2) !important;
 }
 .toast-notification.toast-notification-info .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4) !important;
 }
 
 
