@@ -59,11 +59,11 @@ let style = [
 
 
 dload.addEventListener('click', function() {
-  window.location.assign("https://github.com/mininxd/xdtoast/releases/download/1.2.0/xdtoast.js")
+  window.location.assign("https://unpkg.com/xdtoast@latest/dist/xdtoast.js")
 })
 
 docs.addEventListener('click', function() {
-  window.location.assign("https://www.mininxd.my.id/docs/xdtoast/")
+  window.location.assign("https://mininxd.vercel.app/docs/xdtoast")
   })
 
 
