@@ -63,7 +63,7 @@ dload.addEventListener('click', function() {
 })
 
 docs.addEventListener('click', function() {
-  window.location.assign("https://docs.mininxd.web.id/xdtoast")
+  window.location.assign("https://docs.mininxd.web.id/xdtoast.html")
   })
 
 
