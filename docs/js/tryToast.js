@@ -63,7 +63,7 @@ dload.addEventListener('click', function() {
 })
 
 docs.addEventListener('click', function() {
-  window.location.assign("https://mininxd.vercel.app/docs/xdtoast")
+  window.location.assign("https://docs.mininxd.web.id/xdtoast")
   })
 
 
