@@ -26,13 +26,17 @@ export default class xdtoast {
     }
 
     toast.className = `toast-notification ${obj.style ? 'toast-notification-' + obj.style : ''} toast-notification-${this.position}`;
-    toast.innerHTML = `
-      <div class="toast-notification-wrapper">
-        ${obj.title ? `<h3 class="toast-notification-header"><span class='toast-notification-icon material-symbols-outlined'>${obj.icon}</span> ${obj.title}</h3>` : ''}
-        ${obj.content ? `<div class="toast-notification-content">${obj.content}</div>` : ''}
-      </div>
-      ${obj.closeButton !== false ? '<button class="toast-notification-close">&times;</button>' : ''}
-    `;
+    
+    toast.innerHTML = ` 
+    <div class="toast-notification-wrapper">
+    ${obj.title ? `<h3 class="toast-notification-header">
+    ${obj.icon ? `<span class="toast-notification-icon material-symbols-outlined">${obj.icon}</span>` : ''}
+    ${obj.title} </h3>` : ''}
+    ${obj.content ? `<div class="toast-notification-content">${obj.content}</div>` : ''}
+  </div>
+  ${obj.closeButton !== false ? '<button class="toast-notification-close">&times;</button>' : ''}
+`;
+
     document.body.appendChild(toast);
     toast.getBoundingClientRect();
     this._setPosition(toast);
