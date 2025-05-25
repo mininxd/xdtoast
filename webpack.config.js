@@ -1,14 +1,23 @@
-const path = require('path');
+import path from 'path';
+import TerserPlugin from 'terser-webpack-plugin';
+import { fileURLToPath } from 'url';
 
-module.exports = {
+
+// filepath ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+//
+export default {
   entry: {
     xdtoast: path.resolve(__dirname, 'src/toast.js'),
-    toast: path.resolve(__dirname, 'src/toast.js'),
   },
   output: {
     filename: '[name].js',
-    path: path.resolve('dist'),
-    libraryTarget: 'module'
+    path: path.resolve(__dirname, 'dist'),
+    libraryTarget: 'module',
+    clean: true,
   },
   mode: 'production',
   module: {
@@ -21,5 +30,17 @@ module.exports = {
   },
   experiments: {
     outputModule: true,
-  }
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          compress: { drop_console: true },
+          format: { comments: false },
+        },
+        extractComments: false,
+      })
+    ],
+  },
 };

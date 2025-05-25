@@ -1,184 +1,161 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 :root {
-  --color-light: #222222;
-  --color-dark: #f8f9fa;
-  --color-success: #145122;
-  --color-danger: #9c1a26;
-  --color-info: #106d7c;
-  --color-warning: #7e5e00;
-  
-  --bg-light: #fafafa;
-  --bg-dark: #2a2a2a;
-  --bg-success: #c3e6cb;
-  --bg-danger: #f5c6cb;
-  --bg-info: #bee5eb;
-  --bg-warning: #fff0c1;
+  --color-light:#222;
+  --color-dark:#f8f9fa;
+  --color-success:#145122;
+  --color-danger:#9c1a26;
+  --color-info:#106d7c;
+  --color-warning:#7e5e00;
+  --bg-light:#fafafa;
+  --bg-dark:#2a2a2a;
+  --bg-success:#c3e6cb;
+  --bg-danger:#f5c6cb;
+  --bg-info:#bee5eb;
+  --bg-warning:#fff0c1;
 }
-
-
 
 .toast-notification {
   position: fixed;
-  text-decoration: none;
   z-index: 999999;
   max-width: 300px;
-  background-color: #fff !important;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
-  border-radius: 4px;
-  display: flex;
-  padding: 10px;
-  transform: translate(0, -150%);
+  background:#fff !important;
+  box-shadow:0 0 20px 0 rgba(0,0,0,0);
+  border-radius:4px;
+  display:flex;
+  padding:10px;
+  transform:translate(0,-150%);
   -webkit-tap-highlight-color: transparent !important;
-  -webkit-tap-highlight-color: rgb(0,0,0,0,) !important;
 }
+
 .toast-notification-icon {
   font-size: inherit;
   transform: translateY(3px);
 }
-.toast-notification .toast-notification-wrapper {
+
+.toast-notification-wrapper {
   flex: 1;
   padding-right: 10px;
   overflow: hidden;
 }
-.toast-notification .toast-notification-wrapper .toast-notification-header {
-  padding: 0 0 5px 0;
+
+.toast-notification-header {
+  padding: 0 0 5px;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
   word-break: break-all;
   color: var(--color-light) !important;
 }
-.toast-notification.toast-notification-light {
-background: var(--bg-light) !important;
-}
-.toast-notification .toast-notification-wrapper .toast-notification-content {
+
+.toast-notification-content {
   font-size: 14px;
   margin: 0;
   padding: 0;
   word-break: break-all;
   color: var(--color-light) !important;
 }
-.toast-notification .toast-notification-close {
+
+.toast-notification-close {
   appearance: none;
   border: none;
   background: transparent;
   cursor: pointer;
   font-size: 24px;
   padding: 0;
-  width: calc(fit-content + 5px);
-  height:fit-content;
+  width: fit-content;
+  height: fit-content;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.6) !important;
+  color: rgba(0,0,0,0.6) !important;
 }
-.toast-notification .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4) !important;
+
+.toast-notification-close:hover {
+  color: rgba(0,0,0,0.4) !important;
 }
-.toast-notification.toast-notification-bottom-left, .toast-notification.toast-notification-bottom-right {
+
+.toast-notification-bottom-left,
+.toast-notification-bottom-right {
   transform: translate(0, 150%);
 }
 
-
-
-
-
-.toast-notification.toast-notification-dark {
-  background-color: var(--bg-dark) !important;
+/* Variants */
+.toast-notification-light {
+  background: var(--bg-light) !important;
 }
-.toast-notification.toast-notification-dark .toast-notification-wrapper .toast-notification-header {
+.toast-notification-dark {
+  background: var(--bg-dark) !important;
+}
+.toast-notification-dark .toast-notification-header,
+.toast-notification-dark .toast-notification-content {
   color: var(--color-dark) !important;
 }
-.toast-notification.toast-notification-dark .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-dark) !important;
+.toast-notification-dark .toast-notification-close {
+  color: rgba(255,255,255,0.2) !important;
 }
-.toast-notification.toast-notification-dark .toast-notification-close {
-  color: rgba(255, 255, 255, 0.2) !important;
-}
-.toast-notification.toast-notification-dark .toast-notification-close:hover {
-  color: rgba(255, 255, 255, 0.4) !important;
+.toast-notification-dark .toast-notification-close:hover {
+  color: rgba(255,255,255,0.4) !important;
 }
 
-
-
-
-
-.toast-notification.toast-notification-success {
-  background-color: var(--bg-success) !important;
+.toast-notification-success {
+  background: var(--bg-success) !important;
 }
-.toast-notification.toast-notification-success .toast-notification-wrapper .toast-notification-header {
+.toast-notification-success .toast-notification-header,
+.toast-notification-success .toast-notification-content {
   color: var(--color-success) !important;
 }
-.toast-notification.toast-notification-success .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-success) !important;
+.toast-notification-success .toast-notification-close {
+  color: rgba(0,0,0,0.2) !important;
 }
-.toast-notification.toast-notification-success .toast-notification-close {
-  color: rgba(0, 0, 0, 0.2) !important;
-}
-.toast-notification.toast-notification-success .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4) !important;
+.toast-notification-success .toast-notification-close:hover {
+  color: rgba(0,0,0,0.4) !important;
 }
 
-
-
-.toast-notification.toast-notification-warning {
-  background-color: var(--bg-warning) !important;
+.toast-notification-warning {
+  background: var(--bg-warning) !important;
 }
-.toast-notification.toast-notification-warning .toast-notification-wrapper .toast-notification-header {
+.toast-notification-warning .toast-notification-header,
+.toast-notification-warning .toast-notification-content {
   color: var(--color-warning) !important;
 }
-.toast-notification.toast-notification-warning .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-warning) !important;
+.toast-notification-warning .toast-notification-close {
+  color: rgba(0,0,0,0.2) !important;
 }
-.toast-notification.toast-notification-warning .toast-notification-close {
-  color: rgba(0, 0, 0, 0.2) !important;
-}
-.toast-notification.toast-notification-warning .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4) !important;
+.toast-notification-warning .toast-notification-close:hover {
+  color: rgba(0,0,0,0.4) !important;
 }
 
-
-
-.toast-notification.toast-notification-danger {
-  background-color: var(--bg-danger) !important;
+.toast-notification-danger {
+  background: var(--bg-danger) !important;
 }
-.toast-notification.toast-notification-danger .toast-notification-wrapper .toast-notification-header {
+.toast-notification-danger .toast-notification-header,
+.toast-notification-danger .toast-notification-content {
   color: var(--color-danger) !important;
 }
-.toast-notification.toast-notification-danger .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-danger) !important;
+.toast-notification-danger .toast-notification-close {
+  color: rgba(0,0,0,0.2) !important;
 }
-.toast-notification.toast-notification-danger .toast-notification-close {
-  color: rgba(0, 0, 0, 0.2) !important;
-}
-.toast-notification.toast-notification-danger .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4) !important;
+.toast-notification-danger .toast-notification-close:hover {
+  color: rgba(0,0,0,0.4) !important;
 }
 
-
-
-
-.toast-notification.toast-notification-info {
-  background-color: var(--bg-info) !important;
+.toast-notification-info {
+  background: var(--bg-info) !important;
 }
-.toast-notification.toast-notification-info .toast-notification-wrapper .toast-notification-header {
+.toast-notification-info .toast-notification-header,
+.toast-notification-info .toast-notification-content {
   color: var(--color-info) !important;
 }
-.toast-notification.toast-notification-info .toast-notification-wrapper .toast-notification-content {
-  color: var(--color-info) !important;
+.toast-notification-info .toast-notification-close {
+  color: rgba(0,0,0,0.2) !important;
 }
-.toast-notification.toast-notification-info .toast-notification-close {
-  color: rgba(0, 0, 0, 0.2) !important;
-}
-.toast-notification.toast-notification-info .toast-notification-close:hover {
-  color: rgba(0, 0, 0, 0.4) !important;
+.toast-notification-info .toast-notification-close:hover {
+  color: rgba(0,0,0,0.4) !important;
 }
 
-
-
-
-.toast-notification.toast-notification-dimmed {
+.toast-notification-dimmed {
   opacity: .3;
 }
-.toast-notification.toast-notification-dimmed:hover, .toast-notification.toast-notification-dimmed:active {
+.toast-notification-dimmed:hover,
+.toast-notification-dimmed:active {
   opacity: 1;
 }

@@ -1,20 +1,16 @@
 {
   "name": "xdtoast",
-  "version": "1.2.1",
-  "scripts": {
-    "build": "webpack"
-  },
+  "version": "1.4.0",
+  "description": "Simple Toast with Google Icons included",
   "author": "mininxd",
   "license": "MIT",
-  "description": "Simple Toast with google icons included",
-  "devDependencies": {
-    "webpack": "^5.94.0",
-    "webpack-cli": "^5.1.4",
-    "css-loader": "^7.1.2",
-    "style-loader": "^4.0.0"
+  "main": "dist/xdtoast.js",
+  "type": "module",
+  "exports": {
+    ".": "./dist/xdtoast.js"
   },
-  "dependencies": {
-    "path": "^0.12.7"
+  "scripts": {
+    "build": "webpack"
   },
   "keywords": [
     "toast",
@@ -22,5 +18,15 @@
     "xdtoast",
     "framework",
     "web-framework"
-  ]
+  ],
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
 }

@@ -1,11 +1,9 @@
 import xdtoast from './xdtoast.js';
-// import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/toast.js';
 export function randomize(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-
-function positionToast(pos) {
+function showToast(pos) {
 const postToast = new xdtoast({
   position: pos,
   offsetX: 20,
@@ -13,7 +11,7 @@ const postToast = new xdtoast({
   width: 'fit-content',
   gap: 10,
   duration: '.25s',
-  time: 1,
+  time: 1.5,
   timing: 'ease-out',
   dim: true,
 });
@@ -27,7 +25,26 @@ postToast.push({
 
 
 let icons = [
-  'download','search','close','visibility','star','check_circle', 'radio_button_unchecked','radio_button_checked']
+  'info',
+  'notifications',
+  'warning',
+  'celebration',
+  'bug_report',
+  'rocket_launch',
+  'bolt',
+  'thumb_up',
+  'lightbulb',
+  'send',
+  'download',
+  'search',
+  'close',
+  'visibility',
+  'star',
+  'check_circle',
+  'radio_button_unchecked',
+  'radio_button_checked'
+  ]
+
 let header = [
   'Welcome',
   'Good Morning',
@@ -37,10 +54,30 @@ let header = [
   'xd',
   'Greetings!',
   'Rise and Shine!',
-  'Quick Update'
+  'Quick Update',
+  'Heads Up!',
+  'Notice',
+  'New Notification',
+  'Just So You Know',
+  'Quick Tip',
+  'FYI',
+  'Happening Now',
+  'Hey There!',
+  'Ping!',
+  'Something Cool'
 ];
 
 let content = [
+  'Here’s something you might like.',
+  'You’ve got this!',
+  'Just testing the toast system.',
+  'This is your moment to shine.',
+  'Guess what? This works!',
+  'Don’t forget to smile today!',
+  'System running smoothly!',
+  'New features are live!',
+  'A toast a day keeps the bugs away.',
+  'Surprise! You clicked it!',
   'Here’s your daily toast notification!',
   'Are you prepared for today’s tasks?',
   'Not too shabby, right?',
@@ -56,6 +93,11 @@ let style = [
   'light','dark','success','warning','danger','info'
   ]
 
+let position = [
+  "top-left", "top-right", "bottom-left", "bottom-right"
+  ]
+
+
 
 
 dload.addEventListener('click', function() {
@@ -69,14 +111,14 @@ docs.addEventListener('click', function() {
 
 
 tryLeft.addEventListener('click', function() {
-  positionToast('top-left');
+  showToast('top-left');
 })
 tryBLeft.addEventListener('click', function() {
-  positionToast('bottom-left');
+  showToast('bottom-left');
 })
 tryRight.addEventListener('click', function() {
-  positionToast('top-right');
+  showToast('top-right');
 })
 tryBRight.addEventListener('click', function() {
-  positionToast('bottom-right');
+  showToast('bottom-right');
 })
