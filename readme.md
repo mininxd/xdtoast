@@ -1,10 +1,9 @@
-### A simple toast xD
+### xdtoast
 
 ![1000282468](https://github.com/user-attachments/assets/cffcb0c0-66a5-47ed-90ca-9faff6804fbb)
 
 
 ### Install :
-
 npm:
 ```bash
 npm install xdtoast
@@ -27,7 +26,7 @@ CDN UNPKG
 ### how to use : 
 ```javascript
 // Initialize a new instance
-import xdtoast from 'dist/xdtoast.js';
+import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/xdtoast.js'
 const toast = new xdtoast()
 
 // How to show the toast :
@@ -39,7 +38,7 @@ const toast = new xdtoast()
   })
 ```
 
-#### available options: 
+### Available `xdtoast({})` options:
 ```javascript
 const toast = new xdtoast({
   position: 'top-right',    // Position of the toast on the screen
@@ -52,8 +51,10 @@ const toast = new xdtoast({
   timing: 'ease-out',       // CSS timing function for the animation (e.g., ease, ease-in, ease-out, linear)
   dim: false,               // Whether or not to dim the background to old toast (true/false)
 });
+```
 
-// Options for toast.push() method
+### Available `toast.push()` options:
+```javascript
 toast.push({
   icon: '',            // Google Icons. See: https://fonts.google.com/icons
   title: '',           // The header text for the toast
@@ -70,7 +71,7 @@ toast.push({
 
 #### full example :
 ```javascript
-import xdtoast from 'dist/toast.js';
+import xdtoast from 'https://unpkg.com/xdtoast@latest/dist/xdtoast.js'
 const toast = new xdtoast()
 
 // Directly show 
@@ -91,6 +92,3 @@ htmlBtn.addEventListener('click', function() {
   })
 })
 ```
-
-
-[![Badge Text](https://img.shields.io/badge/donate_Saweria-E97627?style=for-the-badge)](https://saweria.co/mininxd)
